@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="KGk-i7-Jjw" customClass="KZWorkBannerCell">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="363" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBZ-rI-mYZ">
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nm3-Tf-DZX" customClass="SDCycleScrollView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nm3-Tf-DZX" secondAttribute="trailing" id="JeT-Fu-7jh"/>
+                            <constraint firstItem="nm3-Tf-DZX" firstAttribute="leading" secondItem="FBZ-rI-mYZ" secondAttribute="leading" id="Kop-2A-xww"/>
+                            <constraint firstItem="nm3-Tf-DZX" firstAttribute="top" secondItem="FBZ-rI-mYZ" secondAttribute="top" constant="10" id="Qzs-Bb-Jr5"/>
+                            <constraint firstAttribute="bottom" secondItem="nm3-Tf-DZX" secondAttribute="bottom" constant="10" id="ktL-0f-Gxq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="FBZ-rI-mYZ" secondAttribute="trailing" id="0Tt-bx-s4D"/>
+                    <constraint firstItem="FBZ-rI-mYZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AJc-v7-owt"/>
+                    <constraint firstItem="FBZ-rI-mYZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Juo-TW-O5P"/>
+                    <constraint firstAttribute="bottom" secondItem="FBZ-rI-mYZ" secondAttribute="bottom" id="Twt-NM-Grz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cycleScrollView" destination="nm3-Tf-DZX" id="eVL-c5-8is"/>
+            </connections>
+            <point key="canvasLocation" x="46.5" y="83.5"/>
+        </tableViewCell>
+    </objects>
+</document>

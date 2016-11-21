@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KZSelectIdentityController">
+            <connections>
+                <outlet property="associationBtn" destination="c4A-3W-UVA" id="e8f-vW-r4h"/>
+                <outlet property="businessmanBtn" destination="daz-Qu-Vpa" id="0eC-13-w3I"/>
+                <outlet property="studentBtn" destination="goe-zA-ooI" id="UAJ-uv-mMt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sja-R7-Dbx">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfont-login-kefu" translatesAutoresizingMaskIntoConstraints="NO" id="xFE-Li-uKs">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="CL6-o8-sJq"/>
+                                <constraint firstAttribute="width" constant="40" id="Eat-Iz-s5C"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如有疑问请拨打客服电话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK2-4U-tZq">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.3529411764705882" green="0.42745098039215684" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="400-800-6533" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRL-uy-OZC">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.61176470588235299" green="0.76470588235294112" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.18431372549019609" green="0.20784313725490194" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="xFE-Li-uKs" firstAttribute="centerY" secondItem="sja-R7-Dbx" secondAttribute="centerY" id="5QL-hy-e8A"/>
+                        <constraint firstItem="vK2-4U-tZq" firstAttribute="top" secondItem="sja-R7-Dbx" secondAttribute="top" constant="20" id="Dcx-BR-h0B"/>
+                        <constraint firstItem="vK2-4U-tZq" firstAttribute="leading" secondItem="xFE-Li-uKs" secondAttribute="trailing" constant="5" id="P0N-D7-BRg"/>
+                        <constraint firstItem="xFE-Li-uKs" firstAttribute="leading" secondItem="sja-R7-Dbx" secondAttribute="leading" constant="30" id="Qs0-bt-TJU"/>
+                        <constraint firstItem="zRL-uy-OZC" firstAttribute="top" secondItem="vK2-4U-tZq" secondAttribute="bottom" constant="10" id="bCE-h5-sCF"/>
+                        <constraint firstItem="zRL-uy-OZC" firstAttribute="leading" secondItem="xFE-Li-uKs" secondAttribute="trailing" constant="5" id="cv1-0n-G46"/>
+                        <constraint firstAttribute="height" constant="80" id="ovS-xL-mdy"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goe-zA-ooI">
+                    <color key="backgroundColor" red="0.16862745098039217" green="0.18823529411764706" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="yDX-lQ-byM"/>
+                    </constraints>
+                    <state key="normal" title="我是学生">
+                        <color key="titleColor" red="0.61176470588235299" green="0.76470588235294112" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectBtnClick:" destination="-1" eventType="touchUpInside" id="A93-fQ-WXd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4A-3W-UVA">
+                    <color key="backgroundColor" red="0.16862745098039217" green="0.18823529411764706" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="wGa-Pu-VJu"/>
+                    </constraints>
+                    <state key="normal" title="我是社团">
+                        <color key="titleColor" red="0.61176470588235299" green="0.76470588235294112" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectBtnClick:" destination="-1" eventType="touchUpInside" id="Ffq-gt-PKB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daz-Qu-Vpa">
+                    <color key="backgroundColor" red="0.16862745098039217" green="0.18823529411764706" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="zOE-T8-72I"/>
+                    </constraints>
+                    <state key="normal" title="我是商户">
+                        <color key="titleColor" red="0.61176470588235299" green="0.76470588235294112" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectBtnClick:" destination="-1" eventType="touchUpInside" id="AKy-Rn-lq0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.19607843137254902" green="0.2196078431372549" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="goe-zA-ooI" secondAttribute="trailing" constant="40" id="4ee-Ob-J0h"/>
+                <constraint firstItem="c4A-3W-UVA" firstAttribute="trailing" secondItem="goe-zA-ooI" secondAttribute="trailing" id="6Fo-bU-5Fe"/>
+                <constraint firstItem="goe-zA-ooI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="91A-fE-DF1"/>
+                <constraint firstItem="daz-Qu-Vpa" firstAttribute="trailing" secondItem="c4A-3W-UVA" secondAttribute="trailing" id="Bb8-lq-mm1"/>
+                <constraint firstItem="goe-zA-ooI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="Ken-QN-AMU"/>
+                <constraint firstAttribute="bottom" secondItem="sja-R7-Dbx" secondAttribute="bottom" constant="40" id="Sdu-hd-aIc"/>
+                <constraint firstItem="c4A-3W-UVA" firstAttribute="leading" secondItem="goe-zA-ooI" secondAttribute="leading" id="cy0-x2-GoK"/>
+                <constraint firstItem="sja-R7-Dbx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="hxd-rI-NKw"/>
+                <constraint firstItem="c4A-3W-UVA" firstAttribute="top" secondItem="goe-zA-ooI" secondAttribute="bottom" constant="20" id="jhP-bk-Lpl"/>
+                <constraint firstAttribute="trailing" secondItem="sja-R7-Dbx" secondAttribute="trailing" constant="40" id="pqq-or-J1X"/>
+                <constraint firstItem="daz-Qu-Vpa" firstAttribute="top" secondItem="c4A-3W-UVA" secondAttribute="bottom" constant="20" id="tay-aW-Ars"/>
+                <constraint firstItem="daz-Qu-Vpa" firstAttribute="leading" secondItem="c4A-3W-UVA" secondAttribute="leading" id="ytu-Lb-6aJ"/>
+            </constraints>
+            <point key="canvasLocation" x="-901" y="-31"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconfont-login-kefu" width="30" height="30"/>
+    </resources>
+</document>

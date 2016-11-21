@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="217" id="KGk-i7-Jjw" customClass="RemarksCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfont-Intentionlist-beizhubg.9" translatesAutoresizingMaskIntoConstraints="NO" id="Iff-Lq-Mky"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在了解Modules之前我们需要先了解一下OC的import机制。#import &lt;FrameworkFoo/HeaderBar.h&gt;，我相信每个开发者都写过这样的代码，用来引用其他的头文件。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdv-IL-0ZC">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VGB-P1-9Gg">
+                        <frame key="frameInset" minX="25" width="1" height="129.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9O-1N-FXP">
+                        <frame key="frameInset" minX="20" minY="20" width="10" height="10"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-10-24 05:19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0B7-1o-JdN">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="JrH-eq-aFy"/>
+                            <constraint firstAttribute="width" constant="120" id="OFA-Uw-JlD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyC-2Y-OaK">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="04v-0f-b8O"/>
+                            <constraint firstAttribute="width" constant="15" id="Ljn-2H-oxb"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="iconfont-Intentionlist-del"/>
+                        <connections>
+                            <action selector="deleteRemarks:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6Zo-u0-CmM"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="sdv-IL-0ZC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="3eF-dt-f7D"/>
+                    <constraint firstItem="dyC-2Y-OaK" firstAttribute="top" secondItem="0B7-1o-JdN" secondAttribute="top" id="7bs-36-3kx"/>
+                    <constraint firstItem="0B7-1o-JdN" firstAttribute="top" secondItem="sdv-IL-0ZC" secondAttribute="bottom" constant="10" id="8Pe-oZ-D3x"/>
+                    <constraint firstAttribute="trailing" secondItem="sdv-IL-0ZC" secondAttribute="trailing" constant="30" id="9XB-RG-rsw"/>
+                    <constraint firstItem="sdv-IL-0ZC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="55" id="AZj-68-ujJ"/>
+                    <constraint firstItem="Iff-Lq-Mky" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="IoR-CU-zKM"/>
+                    <constraint firstItem="Iff-Lq-Mky" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="NYE-sa-hmI"/>
+                    <constraint firstItem="0B7-1o-JdN" firstAttribute="leading" secondItem="sdv-IL-0ZC" secondAttribute="leading" id="Rvc-Ml-aPc"/>
+                    <constraint firstItem="dyC-2Y-OaK" firstAttribute="leading" secondItem="0B7-1o-JdN" secondAttribute="trailing" constant="5" id="p0E-4V-Erv"/>
+                    <constraint firstAttribute="trailing" secondItem="Iff-Lq-Mky" secondAttribute="trailing" constant="15" id="s1I-G2-dfn"/>
+                    <constraint firstAttribute="bottom" secondItem="Iff-Lq-Mky" secondAttribute="bottom" constant="10" id="ws7-Kq-psn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="circleView" destination="y9O-1N-FXP" id="WTq-0H-P7O"/>
+                <outlet property="deleteButton" destination="dyC-2Y-OaK" id="Bd6-PS-I9E"/>
+                <outlet property="remarksContent" destination="sdv-IL-0ZC" id="qae-mF-yCI"/>
+                <outlet property="remarksTime" destination="0B7-1o-JdN" id="1De-34-iHt"/>
+                <outlet property="statusLine" destination="VGB-P1-9Gg" id="ZE5-lE-j0Q"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="129"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconfont-Intentionlist-beizhubg.9" width="7" height="17"/>
+        <image name="iconfont-Intentionlist-del" width="13" height="13"/>
+    </resources>
+</document>

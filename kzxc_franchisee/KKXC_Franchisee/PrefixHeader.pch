@@ -1,0 +1,42 @@
+//
+//  PrefixHeader.pch
+//  KKXC_Franchisee
+//
+//  Created by 翁昌青 on 16/8/2.
+//  Copyright © 2016年 cqingw. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "KZMacroDefinition.h"
+#import "Header.h"
+#import "UIColor+Hex.h"
+#import "UIImage+Helper.h"
+#import "UIView+Frame.h"
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
+#import <Masonry.h>
+#import "NSObject+HJGeneral.h"
+#import "MJExtension.h"
+#import "NSString+Hash.h"
+#import "ValidateHelper.h"
+#import <UIButton+WebCache.h>
+#import <UIImageView+WebCache.h>
+#import "NSObject+Time.h"
+#import <MJRefresh.h>
+#import "NotificationNameConst.h"
+#import "KZNetworkEngine.h"
+#import "UIViewController+Navigation.h"
+#import "NSMutableAttributedString+LLExtension.h"
+#import "UIButton+KZExtension.h"
+#import "KZInterface.h"
+#import "KZDataBaseManager.h"
+#import "KZDateManager.h"
+
+#endif /* PrefixHeader_pch */

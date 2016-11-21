@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="KZMineCell" id="KGk-i7-Jjw" customClass="KZMineCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="251" image="icon_mine_card" translatesAutoresizingMaskIntoConstraints="NO" id="cJ3-lI-aPP"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAJ-HT-lzm">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cJ3-lI-aPP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="28a-mW-onk"/>
+                    <constraint firstItem="gAJ-HT-lzm" firstAttribute="leading" secondItem="cJ3-lI-aPP" secondAttribute="trailing" constant="10" id="ZxI-Zp-Tfw"/>
+                    <constraint firstItem="cJ3-lI-aPP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="cFj-wd-c3Q"/>
+                    <constraint firstItem="gAJ-HT-lzm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dTD-2z-clx"/>
+                    <constraint firstAttribute="trailing" secondItem="gAJ-HT-lzm" secondAttribute="trailing" constant="15" id="ogm-Y4-Ya8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftIcon" destination="cJ3-lI-aPP" id="dqO-6x-I9t"/>
+                <outlet property="showMessage" destination="gAJ-HT-lzm" id="w13-RK-1kZ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_mine_card" width="20" height="20"/>
+    </resources>
+</document>

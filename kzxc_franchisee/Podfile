@@ -1,0 +1,32 @@
+platform :ios,"7.0"
+target "KKXC_Franchisee" do
+    pod 'AFNetworking', '3.1.0'
+    pod 'Masonry', '1.0.1'
+    pod 'MJRefresh', '3.1.12'
+    pod 'UITableView+FDTemplateLayoutCell', '1.4'
+    pod 'DZNEmptyDataSet', '1.8.1'
+    pod 'SVProgressHUD', '2.0.3'
+    pod 'MJExtension', '3.0.13'
+    pod 'IQKeyboardManager', '3.3.7'
+    pod 'Reachability', '3.2'
+    pod 'WebViewJavascriptBridge', '5.0.5'
+    pod 'FMDB', '2.6.2'
+    pod 'SDWebImage', '3.7.6'
+    pod 'Bugtags', '2.0.0'
+    pod 'JSBadgeView', '1.4.1'
+    pod 'SDCycleScrollView', '1.65'
+    pod 'SZTextView', '1.2.2'
+    pod 'JSPatchPlatform', '1.6.2'
+    pod 'FLAnimatedImage', '1.0.12'
+    pod 'BBCyclingLabel', '1.0.1'
+    pod 'YYCategories'  , '1.0.4'
+    pod 'BaiduMapKit', '3.1.0'
+    pod 'MWPhotoBrowser', '2.1.2'
+    pod 'JPush', '2.1.9'
+
+    # U-Share SDK UI模块（分享面板，建议添加）
+    pod 'UMengUShare/UI', '6.0.1'
+    pod 'UMengUShare/Social/QQ', '6.0.1'
+    pod 'UMengUShare/Social/WeChat', '6.0.1'
+    
+end

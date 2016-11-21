@@ -1,0 +1,123 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BaiduMapKit (3.1.0)
+  - BBCyclingLabel (1.0.1)
+  - Bugtags (2.0.0):
+    - Bugtags/Core (= 2.0.0)
+  - Bugtags/Core (2.0.0)
+  - DACircularProgress (2.3.1)
+  - DZNEmptyDataSet (1.8.1)
+  - FLAnimatedImage (1.0.12)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - IQKeyboardManager (3.3.7)
+  - JPush (2.1.9)
+  - JSBadgeView (1.4.1)
+  - JSPatchPlatform (1.6.2):
+    - JSPatchPlatform/Core (= 1.6.2)
+  - JSPatchPlatform/Core (1.6.2)
+  - Masonry (1.0.1)
+  - MBProgressHUD (0.9.2)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - MWPhotoBrowser (2.1.2):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - SDWebImage (!= 3.7.2, ~> 3.7)
+  - Reachability (3.2)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - SVProgressHUD (2.0.3)
+  - SZTextView (1.2.2)
+  - UITableView+FDTemplateLayoutCell (1.4)
+  - UMengUShare/Core (6.0.1):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.0.1)
+  - UMengUShare/Social/QQ (6.0.1):
+    - UMengUShare/Core
+  - UMengUShare/Social/WeChat (6.0.1):
+    - UMengUShare/Core
+  - UMengUShare/UI (6.0.1):
+    - UMengUShare/Core
+  - WebViewJavascriptBridge (5.0.5)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (= 3.1.0)
+  - BaiduMapKit (= 3.1.0)
+  - BBCyclingLabel (= 1.0.1)
+  - Bugtags (= 2.0.0)
+  - DZNEmptyDataSet (= 1.8.1)
+  - FLAnimatedImage (= 1.0.12)
+  - FMDB (= 2.6.2)
+  - IQKeyboardManager (= 3.3.7)
+  - JPush (= 2.1.9)
+  - JSBadgeView (= 1.4.1)
+  - JSPatchPlatform (= 1.6.2)
+  - Masonry (= 1.0.1)
+  - MJExtension (= 3.0.13)
+  - MJRefresh (= 3.1.12)
+  - MWPhotoBrowser (= 2.1.2)
+  - Reachability (= 3.2)
+  - SDCycleScrollView (= 1.65)
+  - SDWebImage (= 3.7.6)
+  - SVProgressHUD (= 2.0.3)
+  - SZTextView (= 1.2.2)
+  - UITableView+FDTemplateLayoutCell (= 1.4)
+  - UMengUShare/Social/QQ (= 6.0.1)
+  - UMengUShare/Social/WeChat (= 6.0.1)
+  - UMengUShare/UI (= 6.0.1)
+  - WebViewJavascriptBridge (= 5.0.5)
+  - YYCategories (= 1.0.4)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BaiduMapKit: 4cfaedb118cff7e157e9771859a4bf65a261b2a1
+  BBCyclingLabel: 9bda1cda6df0e5d6a3a63104836a3a558b0053f9
+  Bugtags: 5e5eb6343e15febeb6cb4a080c914e7eb4747817
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
+  JPush: 8bccf709ace4318a8e7008cc4fab42b706bfad46
+  JSBadgeView: 3861ddee41094284d9468e6d0af5107f703aaac5
+  JSPatchPlatform: 105e331f1b899a397d2bc0300a9ace9f9d7b8f08
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  SZTextView: 3a81174dce0710a9ab069bc73a813e6df53b9c82
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+  UMengUShare: 418c2eaf7d8ba939916111d622bf5ea86c86285a
+  WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+
+PODFILE CHECKSUM: 69fe1d714cac488473289f48f4149cbd93f62d3c
+
+COCOAPODS: 1.0.1
